@@ -2,12 +2,12 @@
 Contributors: saintsystems, anderly
 Donate link: http://ssms.us/hVdk
 Tags: woocommerce, mailchimp, ecommerce, email
-Requires at least: 4.7.0
+Requires at least: 6.2
 Tested up to: 6.8.3
-WC tested up to: 10.3.0
-Requires PHP: 5.6
-Stable tag: 2.5.1
-Version: 2.5.1
+WC tested up to: 10.6.2
+Requires PHP: 7.4
+Stable tag: 3.0.4
+Version: 3.0.4
 License: GPLv3
 
 Simple and flexible Mailchimp integration for WooCommerce.
@@ -119,6 +119,26 @@ Also, if you enjoy using the software [we'd love it if you could give us a revie
 2. WooCommerce Mailchimp troubleshooting screen.
 
 == Changelog ==
+
+#### 3.0.4 - Apr 1, 2026
+- Fix: rewrite SVN deploy to match proven release.sh approach
+
+#### 3.0.3 - Apr 1, 2026
+- Fix: remove release-please markers from readme.txt Stable tag
+
+#### 3.0.2 - Apr 1, 2026
+- Fix: use block annotation for version marker in plugin header
+
+#### 3.0.1 - Apr 1, 2026
+- Fix: use full SVN trunk checkout in release workflow
+
+#### 3.0.0 - Apr 1, 2026
+- Minimum requirements raised to PHP 7.4+, WordPress 6.2+, and WooCommerce 8.3+. Sites running older versions must upgrade before updating this plugin.
+- Feature: add block-based checkout support
+- Fix: install SVN in CI for WordPress test suite setup
+- Fix: match existing readme.txt changelog format in release-please workflow
+- Fix: symlink WooCommerce for test bootstrap and add SVN to release workflow
+- mark 3.0 release
 
 #### 2.5.1 - Oct 27, 2025
 - Fix plugin text domain hook.
