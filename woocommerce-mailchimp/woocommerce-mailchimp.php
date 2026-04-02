@@ -6,7 +6,7 @@
  * Author: Saint Systems
  * Author URI: https://www.saintsystems.com
  * x-release-please-start-version
- * Version: 3.0.5
+ * Version: 3.1.0
  * x-release-please-end
  * WC tested up to: 10.6.2
  * Text Domain: woocommerce-mailchimp
@@ -35,8 +35,8 @@ define( 'SS_WC_MAILCHIMP_FILE', __FILE__ );
  */
 require_once( 'includes/class-ss-wc-mailchimp-plugin.php' );
 
-// Include Action Scheduler Library.
-require_once( 'includes/lib/action-scheduler/action-scheduler.php' );
+// Action Scheduler is bundled with WooCommerce 8.3+ (our minimum requirement).
+// No need to include a separate copy.
 
 function SSWCMC() {
 	return SS_WC_MailChimp_Plugin::get_instance();
